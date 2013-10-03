@@ -24,6 +24,10 @@ html {
     line-height: 1.4;
 }
 
+body {
+	color: #124280;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -102,6 +106,7 @@ textarea {
 	
 }
 	.menu-head {
+		position: relative;
 		padding: 0.75em 1em;
 		font-size: 14px;
 		font-weight: bold;
@@ -117,11 +122,38 @@ textarea {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#899ebb', endColorstr='#708cb1',GradientType=0 ); /* IE6-9 */
 
 	}
+		.menu-head:after {
+			content: '►';
+			position: absolute;
+			right: 1em;			
+		}
 	.menu-body {
 		
 	}
 
-
+.contact {
+	background: #f4f5f9;
+	padding: 2em;
+	-webkit-border-bottom-right-radius: 20px;
+			border-bottom-right-radius: 20px
+			background-clip: padding-box;
+}
+	.contact h4 {
+		margin: 0;
+	}
+	.contact-block {
+		margin-left: 3em;
+	}
+		.contact-block div {
+			margin-left: 3.9em;
+			font-size: 1.2em;
+		}
+		div.contact-phone {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 2em;
+			margin: -0.2em 0 -0.2em 0.2em;
+		}
 
 
 
@@ -138,7 +170,9 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+.left {
+	text-align: left;
+}
 /*
  * Image replacement
  */
