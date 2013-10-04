@@ -106,7 +106,9 @@ textarea {
 	padding: 2em;
 	-webkit-border-bottom-right-radius: 20px;
 			border-bottom-right-radius: 20px
-			background-clip: padding-box;
+	background-clip: padding-box; /* mobile border-radius fix*/
+	border-radius: 0 0 20px;
+	behavior: url(js/vendor/PIE/PIE.htc); /* PIE */
 }
 	.contact h4 {
 		margin: 0;
@@ -170,13 +172,12 @@ textarea {
                 content: "▼";
             }
     	.menu-body {
-    	    display: block;
-    	    height: 0;
+    	    max-height: 0;
     	    margin: 0.5em 0;
-            overflow: hidden;
-            opacity: 0;
-            -webkit-transition: opacity 1s ease-out;
-                    transition: opacity 1s ease-out;
+			overflow: hidden;
+			-webkit-transition: max-height 0.5s;
+			   -moz-transition: max-height 0.5s;
+					transition: max-height 0.5s;
     	}
             .menu-body li {
                 font-size: 1.1em;
@@ -186,11 +187,13 @@ textarea {
                 color: #eb6e00;
             }
         .menu-node.open .menu-body {
-            opacity: 1;
-            height: auto;
+            max-height: 1000px;
+            
         }
 
-
+#footer {
+	padding-bottom: 25px;
+}
 
 
 
@@ -205,8 +208,8 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-.left {
-	text-align: left;
+.right {
+	text-align: right;
 }
 /*
  * Image replacement

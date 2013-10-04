@@ -179,6 +179,8 @@ abbr[title] {
 b,
 strong {
     font-weight: bold;
+}
+strong {
     color: #eb6e00;
 }
 
