@@ -109,14 +109,63 @@ a.dashed {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.window {
+	position: absolute;
+	background: #e6e6e6;
+	background-clip: padding-box;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+	text-align: left;
+	behavior: url("js/vendor/PIE/PIE.htc");
+}
+	.window-head, 
+	.window-body, 
+	.window-foot {
+		padding: 10px 20px;
+	}
+	.window-head {
+		position: relative;
+	}
+	.window-close {
+		position: absolute;
+		top: 0; right: 0;
+		padding: 10px 15px;
+		cursor: pointer;
+		font-weight: bold;
+		color: #999;
+	}
+		.window-close:hover {
+			color: #124280;
+		}
+		
+form.inline label {
+	display: inline-block;
+	width: 28%;
+	text-align: right;
+}
+	.checkbox {
+		display: inline;
+		width: auto;
+	}
+		.checkbox input {
+			display: inline-block;
+			width: auto !important;
+		}
+form.inline input {
+	width: 68%;
+} 
+
 #header {
-	
+	overflow: visible;
 }
 	.header-wrap {
 		position: relative;
 		background-image: url(../img/header.jpg);
 		height: 184px;
 	}
+		.header-wrap .grid {
+			overflow: visible;
+		}
 		#logo {
 			text-indent: -3333px;
 		    border: 0;
@@ -171,7 +220,7 @@ a.dashed {
 				right: 20px;top: 16px;
 				width: 16px;
 				border: 0;
-				z-index: 1;
+				z-index: 100;
 				background: #b2aea3 url(../img/search.png) no-repeat;
 			}
 		#menu-bottom {
@@ -204,7 +253,7 @@ a.dashed {
 		padding: 2em;
 		background-clip: padding-box; /* mobile border-radius fix*/
 		border-radius: 0 0 20px;
-		--behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+		behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
 	}
 		.contact h4 {
 			margin: 0;
@@ -246,7 +295,7 @@ a.dashed {
 	    		-pie-background: linear-gradient(#899ebb, #708cb1); /* PIE */
 	    		background: linear-gradient(#899ebb, #708cb1); /* W3C */
 	    		border-radius: 0 0 20px;
-	            --behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+	            behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
 	        }
 	    	   .menu-head:after {
 	    	       content: "▶";
@@ -262,7 +311,7 @@ a.dashed {
 	            background: -ms-linear-gradient(#ed8429, #ef6a29); /* IE10+ */
 	            -pie-background: linear-gradient(#ed8429, #ef6a29); /* PIE */
 	            background: linear-gradient(#ed8429, #ef6a29); /* W3C */
-	            ---behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+	            behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
 	        }
 	            .menu-node.open .menu-head:after {
 	                content: "▼";

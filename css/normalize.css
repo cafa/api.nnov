@@ -181,11 +181,11 @@ strong {
     font-weight: bold;
 }
 strong {
-    color: #eb6e00;
+	color: #eb6e00 !important;
 }
 
 blockquote {
-    margin: 1em 40px;
+	margin: 1em 40px;
 }
 
 /**
