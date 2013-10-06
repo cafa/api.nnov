@@ -34,13 +34,13 @@
 	        		</div>
 	        		<div id="menu-auth" class="col-3-12 right">
 						<b class="rel"><a href="#" class="dashed">Вход для клиентов</a></b>
-						<div class="window">
+						<div id="window-auth" class="window">
 							<div class="window-head">
 								Пожалуйста, авторизуйтесь
 								<div class="window-close" title="Закрыть">×</div>
 							</div>
 							<div class="window-body">
-								<form class="inline">
+								<form class="form-inline">
 									<p>
 										<label>Логин:</label>
 										<input type="text">
@@ -50,12 +50,12 @@
 										<input type="password">
 									</p>
 									<p>
-										<label class="checkbox">
+										<label class="checkbox left-indent">
 											<input type="checkbox"> Запомнить
 										</label>
-										<br><a target="_blank" href="/recovery/">Забыли пароль?</a>
+										<a href="/recovery/" class="left-indent" tabindex="-1">Забыли пароль?</a>
 									</p>
-									<input type="submit" value="Войти">
+									<input type="submit" value="Войти" class="btn wide left-indent">
 								</form>
 							</div>
 						</div>
