@@ -117,7 +117,6 @@ a.dashed {
 	border-radius: 10px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 	text-align: left;
-	behavior: url("js/vendor/PIE/PIE/PIE.htc");
 }
 	.window.open {
 		display: block;
@@ -250,10 +249,8 @@ form .left-indent {
 				padding: 4px 20px 6px 30px;
 				border-radius: 20px;
 				background: url(../img/key.png) 12px no-repeat;
-				background-color: rgb(255, 255, 255);
 			    background-color: rgba(255, 255, 255, 0.5);
-			    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
-			    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+			    -pie-background-color: rgba(255, 255, 255, 0.5);
 			}
 			#window-auth {
 				width: 255px;
@@ -306,7 +303,6 @@ form .left-indent {
 		padding: 2em;
 		background-clip: padding-box; /* mobile border-radius fix*/
 		border-radius: 0 0 20px;
-		behavior: url("js/vendor/PIE/PIE/PIE.htc"); /* PIE */
 	}
 		.contact h4 {
 			margin: 0;
@@ -348,7 +344,6 @@ form .left-indent {
 	    		-pie-background: linear-gradient(#899ebb, #708cb1); /* PIE */
 	    		background: linear-gradient(#899ebb, #708cb1); /* W3C */
 	    		border-radius: 0 0 20px;
-	            behavior: url("js/vendor/PIE/PIE/PIE.htc"); /* PIE */
 	        }
 	    	   .menu-head:after {
 	    	       content: url(../img/arrow_right.png);
@@ -364,7 +359,6 @@ form .left-indent {
 	            background: -ms-linear-gradient(#ed8429, #ef6a29); /* IE10+ */
 	            -pie-background: linear-gradient(#ed8429, #ef6a29); /* PIE */
 	            background: linear-gradient(#ed8429, #ef6a29); /* W3C */
-	            behavior: url("js/vendor/PIE/PIE/PIE.htc"); /* PIE */
 	        }
 	            .menu-node.open .menu-head:after {
 	                content: url(../img/arrow_down.png);
@@ -393,7 +387,15 @@ form .left-indent {
 	padding-bottom: 25px;
 }
 
-
+/* IE fix border-radius, gradient, opacity */
+.window,
+.menu-node.open .menu-head,
+.menu-head,
+.contact,
+.btn,
+#menu-auth b {
+	behavior: url("js/vendor/PIE/PIE/PIE.htc");
+}
 
 
 
