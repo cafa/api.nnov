@@ -248,9 +248,8 @@ form .left-indent {
 			#menu-auth b {
 				padding: 4px 20px 6px 30px;
 				border-radius: 20px;
-				background: url(../img/key.png) 12px no-repeat;
-			    background-color: rgba(255, 255, 255, 0.5);
-			    -pie-background: rgba(255, 255, 255, 0.5);
+				background: url(../img/key.png) 12px no-repeat rgba(255, 255, 255, 0.5);
+			    -pie-background: url(../img/key.png) 12px no-repeat rgba(255, 255, 255, 0.5);
 			}
 			#window-auth {
 				width: 255px;
