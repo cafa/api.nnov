@@ -117,7 +117,7 @@ a.dashed {
 	border-radius: 10px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 	text-align: left;
-	behavior: url("js/vendor/PIE/PIE.htc");
+	behavior: url("border-radius.htc");
 }
 	.window.open {
 		display: block;
@@ -158,7 +158,7 @@ a.dashed {
 		}
 .form-inline input:not(.btn),
 .form-inline select {
-	width: 68%;
+	width: 67%;
 }
 form .left-indent {
 	margin-left: 29%;
@@ -306,7 +306,7 @@ form .left-indent {
 		padding: 2em;
 		background-clip: padding-box; /* mobile border-radius fix*/
 		border-radius: 0 0 20px;
-		behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+		behavior: url("border-radius.htc"); /* PIE */
 	}
 		.contact h4 {
 			margin: 0;
@@ -348,7 +348,7 @@ form .left-indent {
 	    		-pie-background: linear-gradient(#899ebb, #708cb1); /* PIE */
 	    		background: linear-gradient(#899ebb, #708cb1); /* W3C */
 	    		border-radius: 0 0 20px;
-	            behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+	            behavior: url("border-radius.htc"); /* PIE */
 	        }
 	    	   .menu-head:after {
 	    	       content: "▶";
@@ -364,7 +364,7 @@ form .left-indent {
 	            background: -ms-linear-gradient(#ed8429, #ef6a29); /* IE10+ */
 	            -pie-background: linear-gradient(#ed8429, #ef6a29); /* PIE */
 	            background: linear-gradient(#ed8429, #ef6a29); /* W3C */
-	            behavior: url("js/vendor/PIE/PIE.htc"); /* PIE */
+	            behavior: url("border-radius.htc"); /* PIE */
 	        }
 	            .menu-node.open .menu-head:after {
 	                content: "▼";
