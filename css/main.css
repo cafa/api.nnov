@@ -335,13 +335,10 @@ select {
 			}
 			
 #wrap {
-	padding-bottom: 25px;
+
 }
 	.contact {
-		background: #f4f5f9;
-		padding: 2em;
-		background-clip: padding-box; /* mobile border-radius fix*/
-		border-radius: 0 0 20px;
+		
 	}
 		.contact h4 {
 			margin: 0;
@@ -374,7 +371,7 @@ select {
 	    		text-decoration: none;
 	    		color: #fff;
 	    		cursor: pointer;
-	    		background: url(../img/gradient_blue.gif) #899ebb no-repeat;
+	    		background: url(../img/gradient_blue.gif) #899ebb;
 	    		border-radius: 0 0 20px;
 	        }
 	        	.cssgradients .menu-head {
@@ -391,7 +388,7 @@ select {
 					right: 1em;
 				}
 	        .menu-node.open .menu-head {
-				background: url(../img/gradient_orange.gif) #ed8429 no-repeat;
+				background: url(../img/gradient_orange.gif) #ed8429;
 	        }
 	            .cssgradients .menu-node.open .menu-head {
 	            	background: #ed8429; /* Old browsers */
@@ -422,8 +419,62 @@ select {
 	            }
 	        .menu-node.open .menu-body {
 				max-height: 1000px;
-				transition-delay: 0s;
 	        }
+
+#banners {
+	
+}
+	#banners .well {
+		padding: 20px;
+		height: 120px;
+		max-height: 120px;
+	}
+	.banner {
+		display: block;
+		height: 120px;
+		padding: 20px;
+		background: url("../img/banner1.jpg") no-repeat scroll right top transparent;
+		font-size: 16px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+		.banner:hover {
+			background-position: right bottom;
+		}
+	.b1 {
+		padding-top: 55px;
+	}
+		.b1 div, 
+		.b3 div,
+		.b5 div {
+			line-height: 0;
+			padding-left: 18px;
+		}
+	.b2 {
+		background-image: url("../img/banner2.jpg");
+		padding-top: 50px;
+	}
+	.b3 {
+		background-image: url("../img/banner3.jpg");
+		padding-top: 55px;
+		color: #fff;
+	}
+	.b4 {
+		background-image: url("../img/banner4.jpg");
+		padding-top: 40px;
+	}
+	.b5 {
+		background-image: url("../img/banner5.jpg");
+		padding-top: 55px;
+	}
+	.b6 {
+		background-image: url("../img/banner6.jpg");
+		padding-top: 60px;
+	}
+	.b7 {
+		background-image: url("../img/banner7.jpg");
+		padding-top: 55px;
+	}
 
 #footer {
 	padding-bottom: 25px;
@@ -431,7 +482,7 @@ select {
 
 /* IE fix border-radius, gradient, opacity */
 .window,
-.contact,
+.well,
 #menu-auth b,
 .menu-bottom-cons, 
 .menu-bottom-phone {
@@ -449,6 +500,16 @@ select {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+.well {
+	padding: 2em;
+	background: #f4f5f9;
+	background-clip: padding-box;
+	border-radius: 0 0 30px;
+}
+.muted,
+.muted a {
+	color: #808080;
+}
 .right {
 	text-align: right;
 }
