@@ -180,7 +180,8 @@ b,
 strong {
     font-weight: bold;
 }
-strong {
+strong,
+strong a {
 	color: #eb6e00 !important;
 }
 

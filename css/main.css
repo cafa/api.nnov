@@ -110,25 +110,31 @@ a.dashed {
    Author's custom styles
    ========================================================================== */
 .window {
-	display: block;
+	display: none;
 	position: absolute;
-	height: 0;
 	background: #e6e6e6;
 	background-clip: padding-box;
 	border-radius: 10px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 	text-align: left;
-	opacity: 0; 
     overflow: hidden;
 	z-index: 100;
-	-webkit-transition: opacity 0.2s ease-out;
-	   -moz-transition: opacity 0.2s ease-out;
-	        transition: opacity 0.2s ease-out;
 }
 	.window.open {
-		opacity: 1;
-        height: auto;
+	    display: block;
 	}
+	.csstransitions .window {
+	    display: block;
+	    height: 0;
+	    opacity: 0;
+	    -webkit-transition: opacity 0.2s ease-out;
+           -moz-transition: opacity 0.2s ease-out;
+                transition: opacity 0.2s ease-out;
+	}
+	   .csstransitions .window.open {
+            opacity: 1;
+            height: auto;
+	   }
 	.window-head, 
 	.window-body, 
 	.window-foot {
