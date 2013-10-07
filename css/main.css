@@ -110,7 +110,7 @@ a.dashed {
    Author's custom styles
    ========================================================================== */
 .window {
-	//display: none;
+	display: none;
 	position: absolute;
 	background: #e6e6e6;
 	background-clip: padding-box;
