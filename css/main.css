@@ -117,6 +117,7 @@ a.dashed {
 	border-radius: 10px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 	text-align: left;
+	z-index: 100;
 }
 	.window.open {
 		display: block;
@@ -246,10 +247,14 @@ form .left-indent {
 			padding-top: 15px;
 		}
 			#menu-auth b {
-				padding: 4px 20px 6px 30px;
+				padding: 4px 20px 6px 15px;
 				border-radius: 20px;
-				background: url(../img/key.png) 12px no-repeat rgba(255, 255, 255, 0.5);
-			    -pie-background: url(../img/key.png) 12px no-repeat rgba(255, 255, 255, 0.5);
+				background: rgba(255, 255, 255, 0.5);
+			    -pie-background: rgba(255, 255, 255, 0.5);
+			}
+			#menu-auth i:before {
+				content: url(../img/key.png);
+				padding-right: 5px;
 			}
 			#window-auth {
 				width: 255px;
@@ -259,17 +264,18 @@ form .left-indent {
 		}
 			#menu-search-inp {
 				width: 100%;
+				height: 17px;
 				border: 0;
-				padding: 1px 0px 2px 10px;
+				padding: 0 0 0 10px;
 				font-size: 11px;
+				line-height: 17px;
 				color: #989898;
 			}
 			#menu-search-btn {
 				position: absolute;
-				right: 20px;top: 16px;
-				width: 16px;
+				right: -10px;top: 1px;bottom: 0;
+				width: 17px;
 				border: 0;
-				z-index: 100;
 				background: #b2aea3 url(../img/search.png) no-repeat;
 			}
 		#menu-bottom {
@@ -280,15 +286,12 @@ form .left-indent {
 				margin: 2px 0 0 1em;
 				padding: 6px 20px 8px 55px;
 				border-radius: 22px;
-				background: url(../img/menu_bottom_left.png) no-repeat;
-				background-color: rgb(255, 255, 255);
-			    background-color: rgba(255, 255, 255, 0.7);
-			    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
-			    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+				background: rgba(255, 255, 255, 0.7);
+			    -pie-background: rgba(255, 255, 255, 0.7);
 			}
 			.menu-bottom-phone {
 				margin-right: 20px;
-				background-image: url(../img/menu_bottom_right.png);
+				--background-image: url(../img/menu_bottom_right.png);
 			}
 			.menu-bottom-center {
 				padding: 10px;
@@ -328,42 +331,45 @@ form .left-indent {
 	    }
 	    	.menu-head {
 	    	    position: relative;
-	    		padding: 0.7em 1em;
+	    		padding: 9px 1em;
 	    		font-size: 1.2em;
 	    		font-weight: bold;
 	    		text-decoration: none;
 	    		color: #fff;
 	    		cursor: pointer;
-	    		background: #899ebb; /* Old browsers */
-	    		background: -moz-linear-gradient(#899ebb, #708cb1); /* FF3.6+ */
-	    		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#899ebb), color-stop(100%,#708cb1)); /* Chrome,Safari4+ */
-	    		background: -webkit-linear-gradient(#899ebb, #708cb1); /* Chrome10+,Safari5.1+ */
-	    		background: -o-linear-gradient(#899ebb, #708cb1); /* Opera 11.10+ */
-	    		background: -ms-linear-gradient(#899ebb, #708cb1); /* IE10+ */
-	    		-pie-background: linear-gradient(#899ebb, #708cb1); /* PIE */
-	    		background: linear-gradient(#899ebb, #708cb1); /* W3C */
+	    		background: url(../img/gradient_blue.gif) #899ebb;
 	    		border-radius: 0 0 20px;
 	        }
-	    	   .menu-head:after {
-	    	       content: url(../img/arrow_right.png);
-	    	       position: absolute;
-	    	       right: 1em;
-	    	   }
+	        	.cssgradients .menu-head {
+	        		background: -moz-linear-gradient(#899ebb, #708cb1); /* FF3.6+ */
+		    		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#899ebb), color-stop(100%,#708cb1)); /* Chrome,Safari4+ */
+		    		background: -webkit-linear-gradient(#899ebb, #708cb1); /* Chrome10+,Safari5.1+ */
+		    		background: -o-linear-gradient(#899ebb, #708cb1); /* Opera 11.10+ */
+		    		background: -ms-linear-gradient(#899ebb, #708cb1); /* IE10+ */
+		    		background: linear-gradient(#899ebb, #708cb1); /* W3C */
+	        	}
+				.menu-head:after {
+					content: url(../img/arrow_right.png);
+					position: absolute;
+					right: 1em;
+				}
 	        .menu-node.open .menu-head {
-	            background: #ed8429; /* Old browsers */
-	            background: -moz-linear-gradient(#ed8429, #ef6a29); /* FF3.6+ */
-	            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed8429), color-stop(100%,#ef6a29)); /* Chrome,Safari4+ */
-	            background: -webkit-linear-gradient(#ed8429, #ef6a29); /* Chrome10+,Safari5.1+ */
-	            background: -o-linear-gradient(#ed8429, #ef6a29); /* Opera 11.10+ */
-	            background: -ms-linear-gradient(#ed8429, #ef6a29); /* IE10+ */
-	            -pie-background: linear-gradient(#ed8429, #ef6a29); /* PIE */
-	            background: linear-gradient(#ed8429, #ef6a29); /* W3C */
+				background: url(../img/gradient_orange.gif) #ed8429;
 	        }
+	            .cssgradients .menu-node.open .menu-head {
+	            	background: #ed8429; /* Old browsers */
+		            background: -moz-linear-gradient(#ed8429, #ef6a29); /* FF3.6+ */
+		            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed8429), color-stop(100%,#ef6a29)); /* Chrome,Safari4+ */
+		            background: -webkit-linear-gradient(#ed8429, #ef6a29); /* Chrome10+,Safari5.1+ */
+		            background: -o-linear-gradient(#ed8429, #ef6a29); /* Opera 11.10+ */
+		            background: -ms-linear-gradient(#ed8429, #ef6a29); /* IE10+ */
+		            background: linear-gradient(#ed8429, #ef6a29); /* W3C */
+	            }
 	            .menu-node.open .menu-head:after {
 	                content: url(../img/arrow_down.png);
 	            }
 	    	.menu-body {
-	    	    max-height: 0;
+				max-height: 0;
 	    	    margin: 0.2em 0 0.8em;
 				overflow: hidden;
 				-webkit-transition: max-height 0.5s;
@@ -378,8 +384,8 @@ form .left-indent {
 	                color: #eb6e00;
 	            }
 	        .menu-node.open .menu-body {
-	            max-height: 1000px;
-	            
+				max-height: 1000px;
+				transition-delay: 0s;
 	        }
 
 #footer {
@@ -388,11 +394,10 @@ form .left-indent {
 
 /* IE fix border-radius, gradient, opacity */
 .window,
-.menu-node.open .menu-head,
-.menu-head,
 .contact,
-.btn,
-#menu-auth b {
+#menu-auth b,
+.menu-bottom-cons, 
+.menu-bottom-phone {
 	behavior: url("js/vendor/PIE/PIE/PIE.htc");
 }
 
