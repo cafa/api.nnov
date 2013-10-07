@@ -110,7 +110,7 @@ a.dashed {
    Author's custom styles
    ========================================================================== */
 .window {
-	display: none;
+	//display: none;
 	position: absolute;
 	background: #e6e6e6;
 	background-clip: padding-box;
@@ -160,6 +160,8 @@ a.dashed {
 	display: inline-block;
 	width: 28%;
 	text-align: right;
+	*display: inline;
+    *zoom: 1;
 }
 	.form-inline label.checkbox {
 		width: auto;
@@ -169,9 +171,11 @@ a.dashed {
 			display: inline-block;
 			width: auto !important;
 		}
-.form-inline input:not(.btn),
-.form-inline select {
-	width: 60%;
+.form-inline input[type=text],
+.form-inline input[type=password],
+.form-inline select,
+.form-inline textarea {
+	width: 68%;
 }
 form .left-indent {
 	margin-left: 29%;
@@ -188,7 +192,7 @@ form .left-indent {
 	border-bottom-color: #999;
 	border-top-color: #c9c9c9;
 	background-color: #eee;
-	border-radius: 5px;
+	border-radius: 3px;
 	outline: none;
 }
 	.btn:hover,
@@ -215,7 +219,27 @@ form .left-indent {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-
+	.btn.blue {
+	    background-color: #708cb1;
+	    color: #fff;
+	}
+        .btn.blue:hover,
+        .btn.blue:focus {
+            background-color: #899ebb;
+        } 
+input[type=text],
+input[type=password],
+select,
+textarea {
+    padding: 3px 5px;
+    border: 1px solid #bbb;
+    border-bottom-color: #ccc;
+    border-top-color: #777;
+    border-radius: 3px;
+}
+select {
+    padding-left: 1px;
+}
 
 #header {
 	overflow: visible;
