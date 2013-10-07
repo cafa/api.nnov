@@ -374,7 +374,7 @@ select {
 	    		text-decoration: none;
 	    		color: #fff;
 	    		cursor: pointer;
-	    		background: url(../img/gradient_blue.gif) #899ebb;
+	    		background: url(../img/gradient_blue.gif) #899ebb no-repeat;
 	    		border-radius: 0 0 20px;
 	        }
 	        	.cssgradients .menu-head {
@@ -391,7 +391,7 @@ select {
 					right: 1em;
 				}
 	        .menu-node.open .menu-head {
-				background: url(../img/gradient_orange.gif) #ed8429;
+				background: url(../img/gradient_orange.gif) #ed8429 no-repeat;
 	        }
 	            .cssgradients .menu-node.open .menu-head {
 	            	background: #ed8429; /* Old browsers */
