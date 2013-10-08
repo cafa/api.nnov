@@ -309,7 +309,7 @@ select {
 			}
 			#menu-search-btn {
 				position: absolute;
-				right: -10px;top: 1px;bottom: 0;
+				right: -10px;top: 0;bottom: 0;
 				width: 17px;
 				border: 0;
 				background: #b2aea3 url(../img/search.png) no-repeat;
