@@ -15,11 +15,11 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    color: #444;
 }
 
 html {
-	font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
     font-size: 0.75em;
     line-height: 1.4;
 }
@@ -476,19 +476,18 @@ select {
 		padding-top: 55px;
 	}
 
-#partner {
+#partners {
 	
 }
-	#partner a {
-		display: block;
-		width: 100%;
-		padding-left: 80px;
-		text-align: center; 
-	}
-	#partner img {
-		text-decoration: none;
-	}
-
+    .partner-logo {
+        width: 87px;
+        float: left;
+    }
+    .partner-title {
+        display: table-cell;
+        height: 67px;
+        vertical-align: middle;
+    }
 #footer {
 	padding-bottom: 25px;
 }
