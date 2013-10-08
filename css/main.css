@@ -433,7 +433,7 @@ select {
 		display: block;
 		height: 120px;
 		padding: 20px;
-		background: url("../img/banner1.jpg") no-repeat scroll right top transparent;
+		background: url("../img/banner1.jpg") no-repeat right top;
 		font-size: 16px;
 		font-weight: bold;
 		text-decoration: none;
@@ -474,6 +474,19 @@ select {
 	.b7 {
 		background-image: url("../img/banner7.jpg");
 		padding-top: 55px;
+	}
+
+#partner {
+	
+}
+	#partner a {
+		display: block;
+		width: 100%;
+		padding-left: 80px;
+		text-align: center; 
+	}
+	#partner img {
+		text-decoration: none;
 	}
 
 #footer {
