@@ -42,7 +42,6 @@
 .col-1-12 {
 	width: expression((this.parentNode.clientWidth/12 - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 } 
-/* Layout Columns */
 .col-11-12 {
 	width: expression((this.parentNode.clientWidth*11/12 - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
