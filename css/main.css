@@ -473,15 +473,14 @@ select {
 #banners {
 	
 }
-	#banners .well {
+	#banners .well,
+	.banner {
 		padding: 20px;
 		height: 120px;
 		max-height: 120px;
 	}
 	.banner {
 		display: block;
-		height: 120px;
-		padding: 20px;
 		background: url(../img/banner1.jpg) no-repeat right top;
 		font-size: 16px;
 		font-weight: bold;
