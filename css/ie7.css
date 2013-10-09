@@ -1,6 +1,6 @@
 #banners .well,
 .banner {
-	height: expression( this.scrollHeight < 120 ? "120px" : "auto" );
+	height: 80px;
 }
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
