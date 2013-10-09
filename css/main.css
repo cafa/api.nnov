@@ -449,6 +449,7 @@ select {
 		padding: 20px;
 		height: 120px;
 		max-height: 120px;
+		overflow: hidden;
 	}
 	.banner {
 		display: block;

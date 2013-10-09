@@ -11,7 +11,7 @@
 	width: expression((this.parentNode.clientWidth/3 - 20 - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
 .col-1-4, .col-3-12 {
-	width: expression((this.parentNode.clientWidth/4  - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
+	width: expression((this.parentNode.clientWidth/4 - 20  - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
 .col-1-5 {
 	width: expression((this.parentNode.clientWidth/5 - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
