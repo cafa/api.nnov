@@ -544,8 +544,6 @@ select {
 /* IE fix border-radius, gradient, opacity */
 .window,
 .well,
-.menu-bottom-cons, 
-.menu-bottom-phone,
 #menu-auth b {
 	behavior: url("js/vendor/PIE/PIE/PIE.htc");
 }
