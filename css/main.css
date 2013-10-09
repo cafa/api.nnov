@@ -182,7 +182,7 @@ form .left-indent {
 }
 .btn {
 	display: inline-block;
-	padding: 4px 12px;
+	padding: 5px 12px;
 	font-weight: normal;
 	text-align: center;
 	text-decoration: none;
@@ -231,7 +231,7 @@ input[type=text],
 input[type=password],
 select,
 textarea {
-    padding: 3px 5px;
+    padding: 5px;
     border: 1px solid #bbb;
     border-bottom-color: #ccc;
     border-top-color: #777;
