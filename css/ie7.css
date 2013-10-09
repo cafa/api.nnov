@@ -1,7 +1,7 @@
 #banners .well,
 .banner {
-	height: 40px;
-	max-height: 40px;
+	height: 43px;
+	max-height: 43px;
 }
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
