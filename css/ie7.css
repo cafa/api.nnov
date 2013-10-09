@@ -1,7 +1,6 @@
 #banners .well,
 .banner {
-	height: 43px;
-	max-height: 43px;
+	height: expression((this.parentNode.clientHeight - parseInt(this.currentStyle['paddingTop']) - parseInt(this.currentStyle['paddingBottom'])) + 'px');
 }
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
