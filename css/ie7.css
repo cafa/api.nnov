@@ -3,7 +3,7 @@
 	height: 43px;
 	max-height: 43px;
 }
-.grid-pad {
+.grid.grid-pad {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
 .col-1-1 {
