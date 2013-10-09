@@ -453,7 +453,7 @@ select {
 	}
 	.banner {
 		display: block;
-		background: url(../img/banner1.jpg) no-repeat scroll right top;
+		background: url(../img/banner1.jpg) no-repeat scroll right top transparent;
 		font-size: 16px;
 		font-weight: bold;
 		text-decoration: none;
