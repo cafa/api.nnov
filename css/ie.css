@@ -1,0 +1,33 @@
+.header-wrap.main #menu-bottom {
+    padding-top: 70px;
+}
+.menu-edged-left, 
+.menu-edged-right {
+    background: none;
+}
+.menu-edged-left-side, 
+.menu-edged-right-side {
+    position: absolute;
+    top: -2px; left: 0;
+    width: 52px; height: 50px;
+    background: url(../img/menu_edged_left_left.png) no-repeat;
+}
+.menu-edged-right .menu-edged-left-side {
+    background-image: url(../img/menu_edged_left_right.png);
+}
+.menu-edged-right-side {
+    right: 0; left: auto;
+    width: 35px;
+    background-image: url(../img/menu_edged_right.png);
+}
+.menu-edged-center-side {
+    position: absolute;
+    top: -2px; left: 52px; right: 35px;
+    height: 49px;
+    background: url(../img/menu_edged_center.png) repeat;
+}
+.window,
+.well,
+#menu-auth b {
+	behavior: url("js/vendor/PIE/PIE/PIE.htc");
+}
