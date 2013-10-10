@@ -29,5 +29,5 @@
 .window,
 .well,
 #menu-auth b {
-	behavior: url("js/vendor/PIE/PIE/PIE.htc");
+	behavior: url("js/vendor/PIE/PIE.htc");
 }
