@@ -13,6 +13,11 @@
 .form-inline label {
     width: 20%;
 }
+div.contact-phone,
+.form-inline label {
+    display: inline;
+    zoom: 1;
+}
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }

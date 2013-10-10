@@ -100,10 +100,10 @@ a.dashed {
    ========================================================================== */
 
 .browsehappy {
-    margin: 0.2em 0;
+    margin: 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
+    padding: 1em;
 }
 
 /* ==========================================================================
@@ -160,8 +160,6 @@ a.dashed {
 	display: inline-block;
 	width: 28%;
 	text-align: right;
-	*display: inline;
-    *zoom: 1;
 }
 	.form-inline label.checkbox {
 		width: auto;
