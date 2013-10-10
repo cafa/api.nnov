@@ -14,6 +14,9 @@
     background: url(../img/menu_auth.png) no-repeat;
     padding-left: 35px;
 }
+.main #menu-auth b {
+	background-image: url(../img/menu_auth_main.png);
+}
 #menu-search-btn {
     top: 2px;
 }
