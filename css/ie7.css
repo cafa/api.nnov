@@ -5,6 +5,11 @@
 #banners .grid {
     height: 120px;
 }
+.windows {
+    border: 1px solid #bbb;
+    border-bottom-color: #999;
+    border-top-color: #c9c9c9;
+}
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
