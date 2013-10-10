@@ -12,6 +12,10 @@
 }
 #menu-auth b {
     background: url(../img/menu_auth.png) no-repeat;
+    padding-left: 35px;
+}
+#menu-search-btn {
+    top: 2px;
 }
 .form-inline label {
     width: 20%;
