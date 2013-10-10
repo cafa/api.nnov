@@ -459,7 +459,7 @@ select {
 		text-decoration: none;
 	}
 		.banner:hover {
-			background-position: right bottom;
+			background-position: right -120px;
 		}
 	.b1 {
 		padding-top: 55px;
