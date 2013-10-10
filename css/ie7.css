@@ -10,6 +10,9 @@
     border-bottom-color: #999;
     border-top-color: #c9c9c9;
 }
+#menu-auth b {
+    background: url(../img/menu_auth.png) no-repeat;
+}
 .form-inline label {
     width: 20%;
 }
