@@ -13,12 +13,6 @@
 .form-inline label {
     width: 20%;
 }
-.form-inline input[type=text],
-.form-inline input[type=password],
-.form-inline select,
-.form-inline textarea {
-    width: 60%;
-}
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
 }
