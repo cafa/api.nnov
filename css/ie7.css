@@ -3,7 +3,7 @@
 	 height: expression((this.parentNode.clientHeight - parseInt(this.currentStyle['paddingTop']) - parseInt(this.currentStyle['paddingBottom'])) + 'px');
 }
 #banners .grid {
-    height: 100px;
+    height: 120px;
 }
 .col-1-1 {
 	width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
