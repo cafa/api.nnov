@@ -278,7 +278,6 @@ select {
 		}
 			#menu-top a {
 				color: #fff;
-				margin-left: 30px;
 			}
 				#menu-top a:first-child {
 					margin-left: 0;
@@ -361,9 +360,6 @@ select {
 	}
 		.contact h4 {
 			margin: 0;
-		}
-		.contact-block {
-			margin-left: 3em;
 		}
 			.contact-block div {
 				margin-left: 3.9em;
@@ -732,20 +728,13 @@ select {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
-/* Grid media queries */
-@media handheld, only screen and (max-width: 767px) {
+@media (min-width:320px) and (max-width:800px) {
 	.grid, 
 	.container {
 		width: 100%;
@@ -765,6 +754,42 @@ select {
 		margin-bottom: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+}
+@media (min-width:320px) {
+	.contact-block {
+		margin: 0;
+	}
+	.contact-block div {
+		margin: 0;
+	}
+}
+@media (min-width:480px) {
+	
+}
+@media (min-width:600px) {
+	
+}
+@media (min-width:800px) {
+	#menu-top a {
+		margin-left: 5px;
+	}
+}
+@media (min-width:1025px){
+	#menu-top a {
+		margin-left: 10px;
+	}
+	.contact-block {
+		margin-left: 3em;
+	}
+}
+@media (min-width:1281px) {
+	.grid, 
+	.container {
+		max-width: 1256px;
+	}
+	#menu-top a {
+		margin-left: 30px;
 	}
 }
 
