@@ -297,7 +297,7 @@ select {
 				padding-right: 5px;
 			}
 			#window-auth {
-			    left: 0;
+			    right: 20px;
 				width: 255px;
 			}
 		#menu-search {
