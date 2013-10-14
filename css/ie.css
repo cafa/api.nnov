@@ -37,3 +37,12 @@
 .contact-block {
 	margin-left: 3em;
 }
+.contact-block div {
+	margin-left: 3.9em;
+	font-size: 1.2em;
+}
+div.contact-phone {
+	font-size: 2em;
+	font-weight: normal;
+	margin: -0.2em 0 -0.2em 0.2em;
+}
