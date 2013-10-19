@@ -265,7 +265,9 @@ summary,command,menu,del,ins,iframe,embed,rt,
 object,param,video,audio,source,canvas,track,
 map,area,time,kbd,samp,var,mark,bdi,bdo,ruby,
 rp,wbr {
-	background: red !important;
-	color: #fff !important;
 	padding: 10px !important;
+	background: red !important;
+	font-size: 64px !important;
+	font-weight: bold;
+	color: green !important;
 }
