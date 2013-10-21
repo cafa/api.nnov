@@ -26,6 +26,9 @@
     height: 49px;
     background: url(../img/menu_edged_center.png) repeat;
 }
+#menu-auth b {
+    -pie-background: rgba(255, 255, 255, 0.5);
+}
 .window,
 .well,
 #menu-auth b {

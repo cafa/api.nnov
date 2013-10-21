@@ -21,4 +21,9 @@ $(".menu-node").on("click", function(e) {
     $(".menu-node").removeClass("open");
     $(this).addClass("open");
 });
+$(".menu-toggle").on("click", function() {
+    if($(window).width() < 800) {
+        $(".menu").toggleClass("open");
+    }
+});
 

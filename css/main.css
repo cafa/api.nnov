@@ -115,7 +115,7 @@ a.dashed {
 	background: #e6e6e6;
 	background-clip: padding-box;
 	border-radius: 10px;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 	text-align: left;
     overflow: hidden;
 	z-index: 100;
@@ -292,7 +292,6 @@ select {
 				padding: 4px 20px 6px 15px;
 				border-radius: 20px;
 				background: rgba(255, 255, 255, 0.5);
-                -pie-background: rgba(255, 255, 255, 0.5);
 			}
 			#menu-auth i:before {
 				content: url(../img/key.png);
@@ -811,6 +810,29 @@ select {
     	width: 50%;
     	float: left;
     }
+    .menu-node {
+        display: none;
+    }
+    .menu-head {
+        border-radius: 0;
+    }
+    .menu-toggle {
+        position: relative;
+        padding: 9px 3em 9px 1em;
+        margin-bottom: 10px;
+        background-color: #A6BFDF;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+    }
+        .menu-toggle:after {
+            content: url(../img/menu_icon.png);
+            position: absolute;
+            right: 1em;
+        } 
+    .open .menu-node {
+        display: block;
+    }    
     .header-wrap.main #menu-bottom {
 		padding-top: 60px;
 	}
@@ -872,6 +894,9 @@ select {
 		font-size: 1em;
 		font-weight: bold;
 		margin: 0;
+	}
+	.menu-toggle {
+	    display: none;
 	}
 }
 
